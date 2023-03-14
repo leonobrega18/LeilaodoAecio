@@ -14,14 +14,11 @@ import lombok.NoArgsConstructor;
 public class Perfil {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column (name = "perfilId")
-    private Integer perfilId;
-
-    //@Column (name = "usuarioId")
-    //private Integer usuarioId;
+    @Column (name = "perfil_Id")
+    private Integer perfil_Id;
 
     @ManyToOne
-    @JoinColumn(name = "usuarioid")
+    @JoinColumn(name = "usuario_Id")
     private Usuario usuario;
 
     @Column (name = "descricao", length = 50)

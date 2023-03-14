@@ -17,20 +17,19 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "produto_id")
-    private Integer produto_id;
+    private Integer produto_Id;
 
     @ManyToOne
-    @JoinColumn(name = "usuario_id")
-    private Usuario usuario_id;
+    @JoinColumn(name = "usuario_Id")
+    private Usuario usuario;
 
     @Column(name = "descricao")
     private String descricao;
 
     @Column(name = "valor_reserva")
-    private double valor_reserva;
+    private Double valor_reserva;
 
     @Column(name = "status")
     private Boolean status;
-
 
 }

@@ -35,3 +35,17 @@ public class ProdutoController {
     }
 
 }
+
+
+//{"usuario": {
+//        "usuario_Id": 1,
+//        "login": "User_Joao",
+//        "password": "123",
+//        "nome": "Joao",
+//        "cpf": "222222",
+//        "endereco": "Rua que sobe e desce"
+//        },
+//        "descricao": "produto para vender",
+//        "valor_reserva": "10",
+//        "status": "false"
+//}

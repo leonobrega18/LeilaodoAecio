@@ -13,15 +13,20 @@ public class UsuarioController {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-//    public UsuarioController(UsuarioRepository usuarioRepository){
-//        this.usuarioRepository = usuarioRepository;
-//    }
-
     @PostMapping
     public ResponseEntity<Usuario> salvar(@RequestBody Usuario P) {
         Usuario obj = usuarioRepository.save(P);
         return ResponseEntity.ok(obj);
     }
-
-
 }
+
+
+
+//{
+//        "login": "User_Joao",
+//        "password": "123",
+//        "nome": "Joao",
+//        "cpf": "222222",
+//        "endereco": "Rua que sobe e desce"
+//}
+

@@ -14,8 +14,8 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "usuario_id")
-    private Integer usuario_id;
+    @Column(name = "usuario_Id")
+    private Integer usuario_Id;
     @Column(name = "login", length = 50)
     private String login;
     @Column(name = "password", length = 50)
