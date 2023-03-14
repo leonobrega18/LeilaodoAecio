@@ -22,9 +22,15 @@ public class ProdutoController {
     @Autowired
     private ProdutoService service;
 
+//    @PostMapping
+//    public ResponseEntity<Produto> salvar(@RequestBody ProdutoDTO produto) {
+//        Produto response = repository.save(service.criaProduto(produto));
+//        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+//    }
+
     @PostMapping
-    public ResponseEntity<Produto> salvar(@RequestBody ProdutoDTO produto) {
-        Produto response = repository.save(service.criaProduto(produto));
+    public ResponseEntity<Produto> salvar(@RequestBody Produto produto) {
+        Produto response = repository.save(produto);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
