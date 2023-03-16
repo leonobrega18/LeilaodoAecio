@@ -13,7 +13,7 @@ public class ProdutoDTO {
 
     private String descricao;
 
-    private Double valorReserva;
+    private Double valor_reserva;
 
     private Boolean status;
 }

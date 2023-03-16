@@ -11,17 +11,17 @@ import java.util.Optional;
 
 @Service
 public class ProdutoService {
-//
-//    @Autowired
-//    private UsuarioRepository usuarioRepository;
-//
+
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
 //    public Produto criaProduto(ProdutoDTO produtoDTO){
 //        Optional<Usuario> usuario = usuarioRepository.findById(produtoDTO.getUsuario());
 //
 //        Produto novoProduto = new Produto();
 //        novoProduto.setDescricao(produtoDTO.getDescricao());
 //        novoProduto.setStatus(produtoDTO.getStatus());
-//        novoProduto.setValorReserva(produtoDTO.getValorReserva());
+//        novoProduto.setValor_reserva(produtoDTO.getValor_reserva());
 //        novoProduto.setUsuario(usuario.get());
 //
 //        return novoProduto;
