@@ -5,6 +5,7 @@ import com.leilaodoaecio.leilao.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.leilaodoaecio.leilao.service.UsuarioService;
 
 import java.util.List;
 
@@ -24,10 +25,14 @@ public class UsuarioController {
         Usuario obj = usuarioRepository.save(P);
         return ResponseEntity.ok(obj);
     }
+
+    @Operation(summary = "Buscar todos os Usuarios", description = "")
     @GetMapping
-    public ResponseEntity<List<Usuario>> findAll() {
-        List<Usuario> list = usuarioRepository.findAll();
+    public ResponseEntity<Object> findAll() {
+        List<Usuario> list = UsuarioService.findAll();
         return ResponseEntity.ok().body(list);
     }
+
+}
 
 }
